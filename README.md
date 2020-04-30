@@ -25,3 +25,4 @@ Shooted Emoji
 ![shoot out](https://user-images.githubusercontent.com/37480057/80604172-050cdd00-8a4f-11ea-8a23-39ada5958f93.png)
 Scoreboard Popup
 ![scoreboard Popup](https://user-images.githubusercontent.com/37480057/80604223-16ee8000-8a4f-11ea-85cb-2f427029561e.png)
+(https://github.com/rishabhpranav/Shoot-the-Emoji/blob/master/Screenshots/1st%20view%20of%20website.png)
