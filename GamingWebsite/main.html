@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shoot Out Emoji</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.3/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.2.3/jquery-confirm.min.js"></script>
+        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+               
+        <script src="assets/js/explosion.js"></script>
+        <script src="assets/js/beizercurve.js"></script>
+    </head>
+    <body>
+        <center>
+            <div id="top-message">
+                <span style="color:white;margin:3px;display:block;"><h3 style="display:inline;">Shoot Out Emoji 😝</h3> </span>
+            </div>
+            <audio controls loop id="audio-player">
+                <source src="assets/music/backmusic.mp3" type="audio/mpeg">
+                <source src="assets/music/backmusic1.mp3" type="audio/mpeg">
+            </audio>
+            <canvas width="1000px" height="600px" id="canvas"></canvas>
+            <br>
+            <button class="btn-primary" id="btnNew">New Game</button>
+            
+            <select class="btn-primary" id="selectDiff">
+                <option value=1>Easy</option>
+                <option value=2 selected>Normal</option>
+                <option value=3>Hard</option>
+                <option value=4>eXtreme</option>
+                <option value=5>Aag!</option>
+            </select>
+            <!-- Will be Uncommented When When we will connect through it to Database Part -->
+            <!--<button class="btn-primary" id="btnShowScore">Scoreboard</button>-->
+            <button class="btn-primary" id="btnPause">Pause</button>
+            <button style="border-radius:30%" class="btn-danger" id="randCanvasCol"><b>Change Theme</b></button>
+        </center>
+        <div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <p id="scoreboardpop"></p>
+    </div>
+			</div>
+        <script>
+        
+        </script>
+    </body>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js"></script>
+</html>
