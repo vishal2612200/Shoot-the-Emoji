@@ -22,7 +22,8 @@ function ShootOutEmoji(){
         topMessage.style.display = 'none';
         audioPlayer.style.display = 'block';
     }
-    
+      // Your web app's Firebase configuration
+
     
     var canvas = document.getElementById('canvas');
     var btnNew = document.getElementById('btnNew');
@@ -389,6 +390,7 @@ function ShootOutEmoji(){
         var hits = 0;
         var combo = {};
         var checkMissed = true;
+        // alert("hello");
         for(var i=curves.length-1;i>=0;i--){
             var curve = curves[i];
             for(var j=targets.length-1;j>=0;j--){
@@ -462,6 +464,15 @@ function ShootOutEmoji(){
             */
             score.streak=0; 
         }
+     
+          var user_id = localStorage.getItem('id');
+          var db =firebase.database().ref('users/' +user_id );
+          db.child('score').set(score.score);
+
+
+
+
+
     }
 
     function draw(){
@@ -614,3 +625,53 @@ if(!Array.prototype.indexOf){Array.prototype.indexOf=function(b){var a=this.leng
 
 
 window.onload = ShootOutEmoji;
+
+
+var mymodal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var mybtn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var closespan = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+mybtn.onclick = function() {
+    var db1 =firebase.database().ref('users');
+    var leadertable=document.getElementById("leaderboard");
+    leadertable.innerHTML="";
+    var lst= "";
+    lst=  ` <tr>
+                        <th style="width:180px;">
+                            Name
+                        </th>
+                        <th style="width:180px;">
+                            Score
+                        </th>
+                    </tr>`;
+    db1.once("value",function(snapshot){
+        snapshot.forEach(function(usersnap){
+          lst+=`<tr>
+                    <td>${usersnap.val().name}</td>
+                    <td>${usersnap.val().score}</td>
+                    </tr>`
+        });
+        leadertable.innerHTML+=lst;
+    });
+
+
+  mymodal.style.display = "block";
+
+}
+
+// When the user clicks on <span> (x), close the modal
+closespan.onclick = function() {
+  mymodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == mymodal) {
+    mymodal.style.display = "none";
+  }
+}
