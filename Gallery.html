@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Index | Gaming Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Jura:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="https://kit.fontawesome.com/b06605e970.js"></script>
+  </head>
+  <body>
+    
+    <div id="container">
+
+        <header>
+            <div id="topbar">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>
+                                   Team - SLOT 19 
+                                </li><br>
+                                <li>TEAM MEMBERS - VISHAL SHARMA , VIDUSHI JAIN, </li>
+                                 <li>MEENAL KHAJURIA , RISHABH YADAV</li>
+                                
+                            </ul>
+                        </div>
+                        <!-- <div class="col-md-5"></div> -->
+                        <div class="col-md-3">
+                            <form action="#">
+                                <input type="search">
+                                <button type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <nav id="main-navigation">
+                <div class="container">
+                    <ul class="row justify-content-between align-items-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        
+                        <li class="logo">
+                            <a href="#">
+                               Shoot Out Emoji
+                            </a>
+                        </li>
+                        
+                        <li><a href="how_to_play.html">How To Play</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+    
+        
+        <div style="text-align:center">
+          <h2>Gallery</h2>
+          <p>Screenshots of Shoot Out Emoji</p>
+        </div>
+        
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+          <!-- image1-->
+            <img src="assets/images/outputs/1st view of website.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <!--img2-->
+          <div class="column">
+            <img src="assets/images/outputs/scoreboard Popup.png"  style="width:100%" onclick="myFunction(this);">
+          </div>
+          <!--img3-->
+          <div class="column">
+            <img src="assets/images/outputs/shoot out.png"  style="width:100%" onclick="myFunction(this);">
+          </div>
+          <!--img4-->
+          <div class="column">
+            <img src="assets/images/outputs/shoot the emoji.png"  style="width:100%" onclick="myFunction(this);">
+          </div>
+          <!--img5-->
+          <div class="column">
+            <img src="assets/images/outputs/newgame_popup.png"  style="width:100%" onclick="myFunction(this);">
+          </div>
+        </div>
+        
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+    </div>
+
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 10px;
+        }
+        
+        /* Style the images inside the grid */
+        .column img {
+          opacity: 0.8; 
+          cursor: pointer; 
+        }
+        
+        .column img:hover {
+          opacity: 1;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* The expanding image container */
+        .container {
+          position: relative;
+          display:block;
+        }
+        
+        /* Expanding image text */
+        #imgtext {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: white;
+          font-size: 20px;
+        }
+        
+        /* Closable button inside the expanded image */
+        .closebtn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          color: white;
+          font-size: 35px;
+          cursor: pointer;
+        }
+        </style>
+
+
+
+
+        <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+  
+        
+  
+
+
+     
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  </body>
+</html>
