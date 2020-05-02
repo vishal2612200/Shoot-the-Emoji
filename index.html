@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Jura:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/pages.css">
     <script src="https://kit.fontawesome.com/b06605e970.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
   </head>
   <body>
     
@@ -70,12 +73,35 @@
                     <img src=" https://wallpapercart.com/wp-content/uploads/2019/04/pubg-wallpaper-engine-1366x768.jpg" class="d-block w-100" alt="...">
                     <div class="text">
                         <h1>SHOOT OUT EMOJI</h1>
-                        <p>GAMING WEBSITE FOR WEBTECHNOLOGY PROJECT</p>
-                        <div class="read_more">
+                        <p>GAMING WEBSITE FOR WEB -TECHNOLOGY PROJECT</p>
+
+             <div id="form1" class="form">
+            <h3 style="text-align: center;"> LOGIN </h3>
+        <form id="loginform">
+           
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email id" ><br><br>
+    <label for="pass">Password:</label>
+    <input id="pass" name="password" type="password"
+      placeholder="Enter Password" ><br><br>
+      <center>
+  <div class="read_more">
+   <button type="submit" id="btn" >
+                 PLAY GAME
+            </button>
+                          
+                        </div>
+           
+        </center>
+      </form>
+      <center><a href="SignUp.html" style="text-decoration: none; " id="option">
+            New user? Create an Account. </a></center><br><br>
+      </div>
+                    <!--    <div class="read_more">
                             <a href="main.html">
                                 <span>PLAY GAME</span>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -181,7 +207,27 @@
         </section>
 
     </div>
+      <script>
 
+
+// document.getElementById('loginform').addEventListener('submit', login);
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyAJwgIPOwR3Z5fjGhJAnB_RsCAuQaVK7PQ",
+    authDomain: "calcium-centaur-265219.firebaseapp.com",
+    databaseURL: "https://calcium-centaur-265219.firebaseio.com",
+    projectId: "calcium-centaur-265219",
+    storageBucket: "calcium-centaur-265219.appspot.com",
+    messagingSenderId: "1081466172797",
+    appId: "1:1081466172797:web:4d54e026ea0bb86f718814",
+    measurementId: "G-YBQQME24BY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+      </script>
+      <script src="assets/js/dbstorage.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
