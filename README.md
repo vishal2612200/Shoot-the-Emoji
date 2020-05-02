@@ -1,10 +1,14 @@
 # Group ID - 09
 # Group Members
-Name			Email				Roll No.
-Vishal Sharma         vishalsh533@gmail.com		04420902717
-Rishabh Yadav 	      one.gbpant@gmail.com		65120902717
-Meenal Khajuria	      khajuriameenal1999@gmail.com	75120902717
-Vidushi Jain	      vishi13jain@gmail.com		40320902717
+
+
+| Name             |      Email                    |  RollNo.    |
+|------------------|:-----------------------------:|------------:|
+| Vishal Sharma    |  vishalsh533@gmail.com        | 04420902717 |
+| Rishabh Yadav    |  one.gbpant@gmail.com         | 65120902717 |
+| Meenal Khajuria  |  khajuriameenal1999@gmail.com | 75120902717 |
+| Vidushi Jain	   |  vishi13jain@gmail.com        | 40320902717 |
+
 
 
 
@@ -37,7 +41,7 @@ HTML,CSS,Javascript
 * The first page will be the login page. If you are new new user, then create account and enjoy playing the Shoot Out Emoji Game.
 
 
-# Note: To display the leaderboard, you must have the active internet connection while playing the game
+### Note: To display the leaderboard, you must have the active internet connection while playing the game
 
 
 
