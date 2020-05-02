@@ -1,7 +1,24 @@
+# Group ID - 09
+# Group Members
+
+
+| Name             |      Email                    |  RollNo.    |
+|------------------|:-----------------------------:|------------:|
+| Vishal Sharma    |  vishalsharma.gbpecdelhi@gmail.com        | 04420902717 |
+| Rishabh Yadav    |  one.gbpant@gmail.com         | 65120902717 |
+| Meenal Khajuria  |  khajuriameenal1999@gmail.com | 75120902717 |
+| Vidushi Jain	   |  vishi13jain@gmail.com        | 40320902717 |
+
+
+
+
 # Shoot-the-Emoji
-This repository has been developed for Covid -19 Web Assignment work. It is based on Javascript Game Conecpts
+This repository has been developed for Covid -19 Web Assignment work. It is based on Javascript Game Concepts
 # Current Stage
 In Working Condition
+# Live URL
+https://vishal2612200.github.io/Shoot-the-Emoji/
+
 # Technology Used
 HTML,CSS,Javascript
 # Features
@@ -17,6 +34,19 @@ HTML,CSS,Javascript
 - Scoreboard and Stats Popup(After Game Over)
 - Random Emoji and war machine
 - Combo Shout out Bonus
+
+
+# Steps to run the application
+* Clone the repository or download the zip file.
+  - Clone repo locally in the terminal using  ```git clone https://github.com/vishal2612200/Shoot-the-Emoji.git```
+  - Download the zip from ```https://github.com/vishal2612200/Shoot-the-Emoji```
+* Run the index.html file in the browser
+* The first page will be the login page. If you are new new user, then create account and enjoy playing the Shoot Out Emoji Game.
+
+
+### Note: To display the leaderboard, you must have the active internet connection while playing the game
+
+
 
 # Screenshots
 Paused Game
