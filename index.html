@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <style>
+         .form{
+    
+    height : 100%;
+    background-color: #4CAF50;
+    margin: 5% 5% 10% 20%;
+    float: left;
+    width : 50%;
+    border-radius: 25px;
+  }
+  label{
+      font-family : "Lucida Console", Courier, monospace;
+      font-size: 1.6vw;
+      padding : 5% 5% 6% 5%;
+      
+
+  }
+
+  input{
+      float:right;
+      margin-right : 10%;
+      padding-right: 20%;
+      font-size: 1.05vw;
+      border-radius: 2px;
+  }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+        <div id="form1" class="form">
+            <h3 style="text-align: center;"> LOGIN </h3>
+        <form id="loginform">
+           
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email id" ><br><br>
+    <label for="pass">Password:</label>
+    <input id="pass" name="password" type="password"
+      placeholder="Enter Password" ><br><br>
+      <center>
+  
+            <button type="submit" id="btn" >
+                Submit
+            </button>
+        </center>
+      </form>
+      <a href="SignUp.html" style=" text-align: center;text-decoration: none; " id="option">
+            New user? Create an Account. </a
+          ><br><br>
+      </div>
+
+      <script>
+
+
+// document.getElementById('loginform').addEventListener('submit', login);
+
+
+var firebaseConfig = {
+    apiKey: "AIzaSyAJwgIPOwR3Z5fjGhJAnB_RsCAuQaVK7PQ",
+    authDomain: "calcium-centaur-265219.firebaseapp.com",
+    databaseURL: "https://calcium-centaur-265219.firebaseio.com",
+    projectId: "calcium-centaur-265219",
+    storageBucket: "calcium-centaur-265219.appspot.com",
+    messagingSenderId: "1081466172797",
+    appId: "1:1081466172797:web:4d54e026ea0bb86f718814",
+    measurementId: "G-YBQQME24BY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+
+
+
+
+      </script>
+      <script src="assets/js/dbstorage.js"></script>
+</body>
+</html>
