@@ -34,6 +34,8 @@ HTML,CSS,Javascript
 - Scoreboard and Stats Popup(After Game Over)
 - Random Emoji and war machine
 - Combo Shout out Bonus
+- User Account
+- Leaderboard for one session
 
 
 # Steps to run the application
